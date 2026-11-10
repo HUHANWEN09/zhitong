@@ -25,6 +25,7 @@
 
 | | 社区版（本仓库） | 官方版 |
 |---|:---:|:---:|
+| 支持的智能体 | Claude Code、Codex、Gemini CLI | Claude Code、Codex、Antigravity（反重力）、Grok |
 | 一屏管理多个智能体终端 | ✅ | ✅ |
 | 按项目、线程组织，随时切换 | ✅ | ✅ |
 | 输入框发送、常用按键 | ✅ | ✅ |
@@ -103,7 +104,7 @@ node server.js
 
 **ZHITONG** puts all your AI coding agents (Claude Code, Codex, Gemini CLI, …) into one web panel. Group them by project, give each thread its own terminal, switch with one click, and send messages from a single input box.
 
-This repository is the **Community Edition**: open source, free, no sign-up, small enough to hack on. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a one-click skills marketplace, remote access from your phone, and auto-update. It has a free plan; some features need a membership.
+This repository is the **Community Edition**: open source, free, no sign-up, small enough to hack on. It supports Claude Code, Codex and Gemini CLI; the official app supports Claude Code, Codex, Antigravity and Grok. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a one-click skills marketplace, remote access from your phone, and auto-update. It has a free plan; some features need a membership.
 
 👉 [Download the official app](https://github.com/HUHANWEN09/zhitong/releases/latest)
 
