@@ -19,7 +19,7 @@
 
 同时开着好几个 AI 编程智能体，终端窗口一多就乱？智通把它们收进一个网页：按项目分组，每个线程是一个独立终端，点一下就切换，底部输入框直接发话。
 
-这个仓库是**社区版**：开源、免费、不用注册，代码精简，适合自己改造。想要开箱即用的完整体验，请下载**官方版**。
+这个仓库是**社区版**：源码公开、免费、不用注册，代码精简，适合自己改造（仅限非商业用途，见下方许可证）。想要开箱即用的完整体验，请下载**官方版**。
 
 ## 社区版和官方版
 
@@ -92,9 +92,11 @@ node server.js
 
 ## 许可证与商标
 
-代码以 [MIT 许可证](LICENSE) 开源，你可以自由使用、修改和分发。
+代码采用 [PolyForm Noncommercial 1.0.0](LICENSE) 许可证：个人学习、研究、自用和非营利组织使用免费，可以修改和分发，但**禁止任何商业用途**（包括在公司内部用于营利业务、二次销售、集成进收费产品或服务）。商业授权请联系 support@xingyuzhitong.com。
 
-「智通」「ZHITONG」名称和图标不在 MIT 授权范围内。基于本项目修改的版本请使用别的名字，不要自称官方版。
+2026 年 11 月 10 日之前按 MIT 许可证取得的版本，仍按 MIT 许可证执行。
+
+「智通」「ZHITONG」名称和图标不在许可证授权范围内。基于本项目修改的版本请使用别的名字，不要自称官方版。
 
 ---
 
@@ -104,7 +106,7 @@ node server.js
 
 **ZHITONG** puts all your AI coding agents (Claude Code, Codex, Gemini CLI, …) into one web panel. Group them by project, give each thread its own terminal, switch with one click, and send messages from a single input box.
 
-This repository is the **Community Edition**: open source, free, no sign-up, small enough to hack on. It supports Claude Code, Codex and Gemini CLI; the official app supports Claude Code, Codex, Antigravity and Grok. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a one-click skills marketplace, remote access from your phone, and auto-update. It has a free plan; some features need a membership.
+This repository is the **Community Edition**: source available, free, no sign-up, small enough to hack on (noncommercial use only; see the license below). It supports Claude Code, Codex and Gemini CLI; the official app supports Claude Code, Codex, Antigravity and Grok. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a one-click skills marketplace, remote access from your phone, and auto-update. It has a free plan; some features need a membership.
 
 👉 [Download the official app](https://github.com/HUHANWEN09/zhitong/releases/latest)
 
@@ -126,4 +128,4 @@ ZHITONG can run commands in your terminals, so it only listens on `127.0.0.1`, c
 
 ### License and trademark
 
-Code is released under the [MIT License](LICENSE). The names "智通" and "ZHITONG" and the logo are not covered by the license; please use a different name for modified versions and do not present them as the official app.
+Code is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE): free for personal use, study, research and noncommercial organizations, including changes and redistribution, but **commercial use is not permitted** (including use inside a company for its business, resale, or bundling into paid products or services). For a commercial license, contact support@xingyuzhitong.com. Copies obtained before November 10, 2026 under the MIT License remain under the MIT License. The names "智通" and "ZHITONG" and the logo are not covered by the license; please use a different name for modified versions and do not present them as the official app.
