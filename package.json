@@ -1,0 +1,12 @@
+{
+  "name": "zhitong",
+  "version": "0.1.0",
+  "description": "智通 ZHITONG 社区版：在一个网页里管理多个 AI 编程智能体（Claude Code、Codex、Gemini CLI）",
+  "main": "server.js",
+  "bin": { "zhitong": "server.js" },
+  "scripts": { "start": "node server.js", "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/HUHANWEN09/zhitong.git" },
+  "keywords": ["claude-code", "codex", "gemini-cli", "ai-agents", "tmux", "terminal", "macos"]
+}

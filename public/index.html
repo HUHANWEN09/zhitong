@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智通 ZHITONG 社区版</title>
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <img src="icon.png" alt="" width="22" height="22">
+      <span>智通 <b>ZHITONG</b></span>
+      <span class="badge" data-t="community">社区版</span>
+    </div>
+    <button id="btn-add-project" class="btn primary block" data-t="addProject">＋ 添加项目</button>
+    <div id="projects"></div>
+    <div class="side-foot">
+      <a id="link-official" class="official-card" target="_blank" rel="noopener">
+        <b data-t="officialTitle">下载官方版</b>
+        <span data-t="officialDesc">语音输入、线程记忆、技能广场一键安装等更多功能</span>
+      </a>
+      <button id="btn-lang" class="btn ghost small">English</button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <header id="topbar">
+      <div id="thread-title" data-t="noThread">选择或新建一个线程</div>
+      <div class="top-actions">
+        <button id="btn-skills" class="btn ghost small" data-t="skills">本机技能</button>
+        <button id="btn-plaza" class="btn ghost small" data-t="plaza">技能广场</button>
+        <button id="btn-close-thread" class="btn ghost small" data-t="closeWindow" disabled>关闭窗口</button>
+      </div>
+    </header>
+    <section id="term-wrap">
+      <iframe id="term" title="terminal"></iframe>
+      <div id="term-empty" class="empty">
+        <h2 data-t="welcomeTitle">在一个界面里管理多个 AI 编程智能体</h2>
+        <p data-t="welcomeDesc">先添加项目文件夹，再在项目下新建线程，选择 Claude Code、Codex 或 Gemini CLI。每个线程是一个独立终端，可以随时切换。</p>
+      </div>
+    </section>
+    <footer id="composer">
+      <div class="keys">
+        <button class="btn ghost small" data-key="Escape">Esc</button>
+        <button class="btn ghost small" data-key="C-c">Ctrl+C</button>
+        <button class="btn ghost small" data-key="Up">↑</button>
+        <button class="btn ghost small" data-key="Down">↓</button>
+        <button class="btn ghost small" data-key="Enter">⏎</button>
+      </div>
+      <textarea id="input" rows="2" data-tp="inputPh" placeholder="输入要发给当前智能体的话，Enter 发送，Shift+Enter 换行"></textarea>
+      <button id="btn-send" class="btn primary" data-t="send">发送</button>
+    </footer>
+  </main>
+
+  <aside id="drawer" hidden>
+    <header><b id="drawer-title"></b><button id="btn-drawer-close" class="btn ghost small">✕</button></header>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+
+<dialog id="dlg-project">
+  <form method="dialog">
+    <h3 data-t="addProject">＋ 添加项目</h3>
+    <label data-t="projectDir">项目文件夹</label>
+    <div class="row">
+      <input id="project-dir" placeholder="~/code/my-app" autocomplete="off">
+      <button type="button" id="btn-pick" class="btn ghost" data-t="pick">选择…</button>
+    </div>
+    <label data-t="projectName">名称（可不填）</label>
+    <input id="project-name" autocomplete="off">
+    <p class="err" id="project-err"></p>
+    <div class="row end">
+      <button value="cancel" class="btn ghost" data-t="cancel">取消</button>
+      <button id="btn-project-ok" value="ok" class="btn primary" data-t="add">添加</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dlg-thread">
+  <form method="dialog">
+    <h3 data-t="newThread">新建线程</h3>
+    <label data-t="agent">智能体</label>
+    <div id="agent-list"></div>
+    <label data-t="threadName">名称（可不填）</label>
+    <input id="thread-name" autocomplete="off">
+    <p class="err" id="thread-err"></p>
+    <div class="row end">
+      <button value="cancel" class="btn ghost" data-t="cancel">取消</button>
+      <button id="btn-thread-ok" value="ok" class="btn primary" data-t="create">新建</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" hidden></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
