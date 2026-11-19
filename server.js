@@ -26,6 +26,7 @@ const TTYD_BASE = '/t-' + crypto.randomBytes(12).toString('hex');
 const OFFICIAL = {
   download: 'https://github.com/HUHANWEN09/zhitong/releases/latest',
   site: 'https://zhitong.xingyuzhitong.com',
+  skills: 'https://skills.xingyuzhitong.com',
 };
 
 // ---------- ttyd ----------

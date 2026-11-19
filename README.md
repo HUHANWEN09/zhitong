@@ -34,7 +34,7 @@
 | 原生 Mac 应用，装好就能用 | | ✅ |
 | 语音输入（本机识别） | | ✅ |
 | 项目线程记忆：换模型、重开会话也能接着干 | | ✅ |
-| 技能广场：一键安装审核过的技能 | 入口 | ✅ |
+| 技能广场：上千个技能在线运行，可接入你自己的 AI（[skills.xingyuzhitong.com](https://skills.xingyuzhitong.com)） | ✅ 网页 / 个人密钥 | ✅ 内置一键接入 |
 | 手机远程访问 | | ✅ |
 | 内容分发技能：让 AI 自动发布到各平台 | | 即将上线 |
 | 自动更新 | | ✅ |
@@ -106,7 +106,7 @@ node server.js
 
 **ZHITONG** puts all your AI coding agents (Claude Code, Codex, Gemini CLI, …) into one web panel. Group them by project, give each thread its own terminal, switch with one click, and send messages from a single input box.
 
-This repository is the **Community Edition**: source available, free, no sign-up, small enough to hack on (noncommercial use only; see the license below). It supports Claude Code, Codex and Gemini CLI; the official app supports Claude Code, Codex, Antigravity and Grok. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a one-click skills marketplace, remote access from your phone, and auto-update. It has a free plan; some features need a membership.
+This repository is the **Community Edition**: source available, free, no sign-up, small enough to hack on (noncommercial use only; see the license below). It supports Claude Code, Codex and Gemini CLI; the official app supports Claude Code, Codex, Antigravity and Grok. For the full experience, get the **official app**: native macOS app, voice input, project and thread memory, a built-in skills marketplace (skills run online and plug into your own AI, see [skills.xingyuzhitong.com](https://skills.xingyuzhitong.com)), remote access from your phone, and auto-update. It has a free plan; some features need a membership.
 
 👉 [Download the official app](https://github.com/HUHANWEN09/zhitong/releases/latest)
 

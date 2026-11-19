@@ -189,7 +189,8 @@
       el('div', { class: 'plaza-empty' },
         el('h3', {}, t('plazaEmpty')),
         el('p', {}, t('plazaDesc')),
-        el('a', { class: 'btn primary', href: r.official.download, target: '_blank', rel: 'noopener' }, t('plazaDownload')),
+        el('a', { class: 'btn primary', href: r.official.skills || 'https://skills.xingyuzhitong.com', target: '_blank', rel: 'noopener' }, t('plazaOpen')),
+        el('a', { class: 'btn ghost', href: r.official.download, target: '_blank', rel: 'noopener' }, t('plazaDownload')),
         el('a', { class: 'btn ghost', href: r.official.site, target: '_blank', rel: 'noopener' }, t('plazaSite')))));
   };
 
